@@ -35,7 +35,7 @@ void harness()
 
     pMqttAgentContext = allocateMqttAgentContext( NULL );
     __CPROVER_assume( isValidMqttAgentContext( pMqttAgentContext ) );
-
+    assert(1 == 2);
     pConnectArgs = malloc( sizeof( MQTTAgentConnectArgs_t ) );
     pCommandInfo = malloc( sizeof( MQTTAgentCommandInfo_t ) );
 
